@@ -1,27 +1,133 @@
-# React + TypeScript + Vite
+Date-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+****************************Front-end****************************
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Typescript
 
-## Expanding the ESLint configuration
+Libraries {
+	-Tailwind = (https://tailwindcss.com/)
+	-React = (https://react.dev/)
+}
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Frameworks {
+	-react-router-dom = (https://reactrouter.com/en/main)
+	-slick = (https://react-slick.neostack.com/) (swiper)
+}
 
-- Configure the top-level `parserOptions` property like this:
+layout {
+	-Navbar
+	-Footer
+}
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Pages {
+	* User Pages {
+		-Login Page
+		-Register Page
+		-Homepage (The flow of the slider and other things)
+		-User Detail Page (Sees the user's credentials and personel info)
+		-Settings Page (App and profile settings)
+		-Message Page (Message With Users)
+		-Image Detail Page (Put a comment or like for the image)
+	}
+	* Admin Pages {
+		-Login Page
+		-Homepage (Admin Panel)
+		-Settings Page (App Setting)
+		-Users Page (See All Users)
+		-User Detail Page (Edit Users)
+		-Message Page (Message With Users)
+		-Image Detail Page (Edit Or Delete Images)
+	}
+}
+
+************************Back-end****************************
+
+Nodejs
+
+For Handling The Postgresql = node-postgres (https://node-postgres.com/)
+For Messaging = websocket (https://www.npmjs.com/package/websocket)
+For rest api = express.js (https://expressjs.com/)
+For hashing = bcrypt (nodejs)
+
+For Everyone {
+
+	- login
+	
+}
+
+
+For Users = {
+	- register
+	- getUser
+	- likeImage
+	- getLikes
+	- getNotifications
+	- postComment
+	- postReply
+}
+
+For Admins = {
+	- getAllUsers
+	- getUser
+	- deleteUser
+	- updateUser
+	- addAdmin
+}
+
+
+
+****************************Database****************************
+
+Postgresql
+
+
+User {
+	-ID (String)
+	-Name (String)
+	-Surname (String)
+	-Username (String)
+	-Email (String)
+	-Password (String)
+	-Profile Image (Image)
+	-[Images] (Array[Image])
+	-Description (String)
+	-Gender (String)
+	-Admin? (Boolean)
+}
+
+Image {
+	-ID (String)
+	-URL (String)
+	-[Likes] (Array[Like])
+	-[Comments] (Array[Comment])
+}
+
+Like {
+	-Liker (User)
+	-Liked (Image)
+}
+
+Comment {
+	-ID (String)
+	-Text (String)
+	-Sender (User)
+	-Date (Datetime)
+	-[Replies] (Array[Reply])
+}
+
+Reply {
+	-ID (String)
+	-Sender (User)
+	-Text (String)
+	-Date (Datetime)
+}
+
+Message {
+	-Text (String)
+	-Sender (User)
+	-Date (Datetime)
+}
+
+
