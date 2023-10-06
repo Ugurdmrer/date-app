@@ -4,7 +4,7 @@ import logo from "../../assets/logo/logo_transparent.png";
 export default function Navbar() {
   if (true) {
     return (
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 border-b shadow">
+      <nav className="bg-white dark:bg-gray-900 shadow">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <NavLink to="/" className="flex items-center">
             <img
@@ -74,7 +74,7 @@ export default function Navbar() {
     );
   } else {
     return (
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 border-b shadow">
+      <nav className="bg-white dark:bg-gray-900 shadow">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <NavLink to="/" className="flex items-center">
             <img

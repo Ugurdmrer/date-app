@@ -8,7 +8,7 @@ import Footer from "./components/layout/Footer";
 function App() {
   const loggedIn = true;
   return (
-    <div className='flex flex-col h-screen justify-between'>
+    <div className='flex flex-col h-screen justify-between bg-gray'>
       <Navbar/>
         <Routes>
           <Route path="/login" element={ loggedIn ? (<Login />): (<Navigate replace to={"/"}/>)}/>
