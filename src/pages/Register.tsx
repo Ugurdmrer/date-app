@@ -27,7 +27,7 @@ export default function Register() {
         </div>
       </div>
       <div className="flex flex-row justify-center">
-      <input className="border border-white w-24 rounded mb-4 p-2 font-bold text-white" value="Login" type="button"/>
+      <input className="border border-white w-24 rounded mb-4 p-2 font-bold text-white hover:bg-white hover:text-primary cursor-pointer" value="Login" type="button"/>
       </div>
     </div>
   )

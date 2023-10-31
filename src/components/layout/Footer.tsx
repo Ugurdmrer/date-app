@@ -13,7 +13,7 @@ export default function Footer() {
               className="mr-3 h-24"
               alt="Dates Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-primary">
               Dates
             </span>
           </NavLink>
@@ -30,7 +30,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopenner noreferrer"
                     href="https://discord.gg/c8SQGr5Fyf"
-                    className="hover:underline"
+                    className="hover:text-primary"
                   >
                     Discord
                   </a>
@@ -43,12 +43,12 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:text-primary">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:text-primary">
                     Terms &amp; Conditions
                   </a>
                 </li>
@@ -73,7 +73,7 @@ export default function Footer() {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                className="w-4 h-4"
+                className="w-4 h-4 hover:text-primary"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

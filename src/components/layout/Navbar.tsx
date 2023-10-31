@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo/logo_transparent.png";
 
 export default function Navbar() {
-  if (true) {
+  if (false) {
     return (
       <nav className="bg-white dark:bg-gray-900 shadow">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -12,7 +12,7 @@ export default function Navbar() {
               className="mr-3 h-24"
               alt="Dates Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-primary">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark hover:text-primary">
               Dates
             </span>
           </NavLink>
@@ -45,7 +45,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to="/login"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-primary"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent hover:text-primary"
                 >
                   Login
                 </NavLink>
@@ -53,7 +53,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to="/register"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-primary"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent hover:text-primary"
                 >
                   Register
                 </NavLink>
@@ -70,10 +70,10 @@ export default function Navbar() {
         <NavLink to="/" className="flex items-center">
             <img
               src={logo}
-              className="mr-3 h-24"
+              className="mr-3 h-24 "
               alt="Dates Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark hover:text-primary">
               Dates
             </span>
           </NavLink>
@@ -106,7 +106,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to="/"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-primary"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent hover:text-primary"
                   aria-current="page"
                 >
                   Home
@@ -115,7 +115,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to="/messages"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-primary"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent hover:text-primary"
                 >
                   Messages
                 </NavLink>
@@ -123,7 +123,7 @@ export default function Navbar() {
               <li>
                 <NavLink
                   to="/settings"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-primary"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-primary md:dark:hover:bg-transparent hover:text-primary"
                 >
                   Settings
                 </NavLink>
