@@ -13,9 +13,9 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-4 mt-4 md:flex-row">
-            <HomepageCard/>
-            <HomepageCard/>
-            <HomepageCard/>
+            <HomepageCard title="title1" description="description1"/>
+            <HomepageCard title="title2" description="description2"/>
+            <HomepageCard title="title3" description="description3"/>
         </div>
       </div>
     </>
