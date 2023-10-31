@@ -19,7 +19,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
           <Route path="/settings" element={<UserSettings/>} />
         </Routes>
-        <Footer/>
+      <Footer/>
     </div>
   )
 }

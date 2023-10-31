@@ -15,7 +15,11 @@ export default {
       'white':'#fff',
       'gray':'#e5e7eb',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'homepage-image': "url('/src/assets/homepage-image.jpg')",
+      }
+    },
   },
   plugins: [],
 }
