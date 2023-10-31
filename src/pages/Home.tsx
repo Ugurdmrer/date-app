@@ -1,5 +1,6 @@
 import HomepageCard from "../components/HomepageCard"
-
+import CardImage1 from "../assets/homepage-card1.jpg"
+import CardImage2 from "../assets/homepage-card2.jpg"
 
 export default function Home() {
   return (
@@ -13,9 +14,9 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-4 mt-4 md:flex-row">
-            <HomepageCard title="title1" description="description1"/>
-            <HomepageCard title="title2" description="description2"/>
-            <HomepageCard title="title3" description="description3"/>
+            <HomepageCard title="title1" description="description1" image={CardImage1}/>
+            <HomepageCard title="title2" description="description2" image={CardImage2}/>
+            <HomepageCard title="title3" description="description3" image={CardImage1}/>
         </div>
       </div>
     </>
